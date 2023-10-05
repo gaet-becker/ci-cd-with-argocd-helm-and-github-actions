@@ -1,0 +1,29 @@
+
+
+replicaCount: 1
+
+image:
+  repository: gaetbecker/ci-cd-with-argocd-helm-and-github-actions
+  pullPolicy: IfNotPresent
+  tag: "latest"
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+serviceAccount:
+  create: True
+  annotations: {}
+  name: ""
+service:
+  type: ClusterIP
+  port: 5000
+ingress:
+  enabled: True
+  className: ""
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+    - host: flask-staging.157.245.21.139.nip.io
+      paths:
+        - path: /tasks
+          pathType: Prefix
+
