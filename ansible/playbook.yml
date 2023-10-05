@@ -17,3 +17,11 @@
       template:
         src: templates/Chart.yaml.j2
         dest: ../charts/cicd-flask/Chart.yaml
+    - name: Handle each environment for argocd_tasks
+      include_tasks: argocd_tasks.yml
+      loop:
+        - dev
+        - staging
+        - prod
+      vars:
+        env: "{{ item }}"
