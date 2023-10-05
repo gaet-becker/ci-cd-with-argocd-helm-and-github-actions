@@ -1,7 +1,7 @@
 # change the replica count to 3 here
 replicaCount: 3
 image:
-  repository: gaet-becker/ci-cd-with-argocd-helm-and-github-actions
+  repository: gaetbecker/ci-cd-with-argocd-helm-and-github-actions
   pullPolicy: IfNotPresent
   tag: "latest"
 imagePullSecrets: []
