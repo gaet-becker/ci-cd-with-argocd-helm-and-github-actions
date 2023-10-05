@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: gaet-becker/ci-cd-with-argocd-helm-and-github-actions
+  repository: gaetbecker/ci-cd-with-argocd-helm-and-github-actions
   pullPolicy: IfNotPresent
   tag: "latest"
 imagePullSecrets: []
