@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  cicd-flask:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-05T13:31:50.785207326Z"
+    description: A Helm chart for Kubernetes
+    digest: 7fee72f6dd6c54b7b799776f89093bb28ead8583a09dc1b84bc928173b639ebc
+    name: cicd-flask
+    type: application
+    urls:
+    - https://github.com/gaet-becker/ci-cd-with-argocd-helm-and-github-actions/releases/download/cicd-flask-0.1.0/cicd-flask-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-10-05T13:31:50.785213926Z"
